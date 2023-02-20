@@ -7,55 +7,172 @@
     --DivsBgColor: #B9F3E4;
 }
 
-.body {
-    height: 100vh;
-    background: #08b170;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+/* Phones Query */
+@media only screen and (max-width: 767px) {
+
+    .body {
+        height: 100vh;
+        background: #08b170;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .NavBar {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+    }
+
+    .Footer {
+        grid-column: 1 / span 12;
+        grid-row: 12 / span 1;
+    }
+
+    .LeftPanel {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 10;
+    }
+
+    .RightPanel {
+        grid-column: 11 / span 2;
+        grid-row: 2 / span 10;
+    }
+
+    .Content {
+        grid-column: 3 / span 8;
+        grid-row: 2 / span 10;
+    }
+
+    .el {
+        background: var(--DivsBgColor);
+        box-shadow: 15px 5px 80px #072b1d;
+        transition: box-shadow 5s ease-in-out;
+    }
+
+    /*Flex Nav Style */
+    .FlexNavItems {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .LeftNavSide {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
 }
 
-.NavBar {
-    grid-column: 1 / span 12;
-    grid-row: 1 / span 1;
-}
+/* Laptops/ L-Tablets Query */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-.Footer {
-    grid-column: 1 / span 12;
-    grid-row: 12 / span 1;
-}
+    .body {
+        height: 100vh;
+        background: #08b170;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
 
-.LeftPanel {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 10;
-}
+    .NavBar {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+    }
 
-.RightPanel {
-    grid-column: 11 / span 2;
-    grid-row: 2 / span 10;
-}
+    .Footer {
+        grid-column: 1 / span 12;
+        grid-row: 12 / span 1;
+    }
 
-.Content {
-    grid-column: 3 / span 8;
-    grid-row: 2 / span 10;
-}
+    .LeftPanel {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 10;
+    }
 
-.el {
-    background: var(--DivsBgColor);
-    box-shadow: 15px 5px 80px #072b1d;
-    transition: box-shadow 5s ease-in-out;
-}
+    .RightPanel {
+        grid-column: 11 / span 2;
+        grid-row: 2 / span 10;
+    }
 
-/*Flex Nav Style */
-.FlexNavItems {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
+    .Content {
+        grid-column: 3 / span 8;
+        grid-row: 2 / span 10;
+    }
 
-.LeftNavSide {
-    display: flex;
-    gap: 40px;
-    align-items: center;
+    .el {
+        background: var(--DivsBgColor);
+        box-shadow: 15px 5px 80px #072b1d;
+        transition: box-shadow 5s ease-in-out;
+    }
+
+    /*Flex Nav Style */
+    .FlexNavItems {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .LeftNavSide {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+}
+/* PC's Full Bild */
+@media only screen and (min-width: 1025px) {
+
+    .body {
+        height: 100vh;
+        background: #08b170;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .NavBar {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+    }
+
+    .Footer {
+        grid-column: 1 / span 12;
+        grid-row: 12 / span 1;
+    }
+
+    .LeftPanel {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 10;
+    }
+
+    .RightPanel {
+        grid-column: 11 / span 2;
+        grid-row: 2 / span 10;
+    }
+
+    .Content {
+        grid-column: 3 / span 8;
+        grid-row: 2 / span 10;
+    }
+
+    .el {
+        background: var(--DivsBgColor);
+        box-shadow: 15px 5px 80px #072b1d;
+        transition: box-shadow 5s ease-in-out;
+    }
+
+    /*Flex Nav Style */
+    .FlexNavItems {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .LeftNavSide {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
 }
